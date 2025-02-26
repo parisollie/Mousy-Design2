@@ -3,19 +3,18 @@
 //  Mousy-Water
 //
 //  Created by Paul Jaime Felix Flores on 14/10/23.
-//
+// Actualizando
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var cartManager = CartManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack(alignment: .bottom){
+            Home()
         }
-        .padding()
     }
 }
 
